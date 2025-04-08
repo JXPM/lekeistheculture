@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leke Culture - Promotion de la culture ivoirienne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Section Hero (Accueil) -->
+    <section id="accueil" class="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('Zaouli.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('IMG.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('Femme.webp'); background-position: center ;"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-right">
+                    <nav class="hero-nav">
+                        <a href="#accueil">La Maison</a>
+                        <a href="#apropos">Les Traditions</a>
+                        <a href="#galerie">Leke en Action</a>
+                        <a href="#blog">Découverte</a>
+                        <a href="#contact">Les Événements</a>
+                    </nav>
+                </div>
+
+                 <div class="hero-left">
+                    <h2>LEKE<br>CULTURE</h2>
+                    <p>L'art, la tradition et la fierté africaine</p>
+                </div>
+            </div>
+            
+            <div class="hero-bottom">
+                <p>C'est l'histoire d'une passion, celle de la culture ivoirienne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="about">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Leke Culture est une initiative visant à promouvoir et célébrer la culture africaine, avec un accent particulier sur la Côte d'Ivoire. Nous partageons des articles, des images et des vidéos pour faire rayonner notre patrimoine.</p>
+    </section>
+
+    <section id="galerie" class="gallery">
+        <h2>Leke en Action</h2>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="doc">Documentaire</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="events">Événements</button>
+        </div>
+        <div class="gallery-grid">
+            <!-- Post 1 -->
+            <div class="gallery-post" data-category="doc">
+                <img src="assets/dee.jpeg" alt="Mode ivoirienne">
+                <div class="gallery-overlay">
+                    <a href="https://www.instagram.com/reel/DFAaTLuqzWa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel = "noopener" class="gallery-link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Post 2 -->
+            <div class="gallery-post" data-category="doc">
+                <img src="assets/news-Natte.png" alt="Nattes traditionnelles">
+                <div class="gallery-overlay">
+                    <a href="https://www.instagram.com/p/DGSpZJ2CpiN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"  rel = "noopener noreferrer" class="gallery-link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Post 3 -->
+            <div class="gallery-post" data-category="culture">
+                <img src="assets/arton.jpg" alt="Danse ivoirienne">
+                <div class="gallery-overlay">
+                    <a href="https://www.instagram.com/p/DANSE_EXAMPLE/" target="_blank" rel = "noopener" class="gallery-link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Post 4 -->
+            <div class="gallery-post" data-category="events">
+                <img src="assets/Jeune.png" alt="Festival de la culture">
+                <div class="gallery-overlay">
+                   <a href="https://www.instagram.com/p/DIFF8a6SE44/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel = "noopener" class="gallery-link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Post 5 -->
+            <div class="gallery-post" data-category="events">
+                <img src="assets/reed.webp" alt="Festival de la culture">
+                <div class="gallery-overlay">
+                   <!--<a href="https://www.instagram.com/p/DANSE_EXAMPLE/" target="_blank" rel = "noopener" class="gallery-link">--> 
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Post 6 -->
+            <div class="gallery-post" data-category="events">
+                <img src="assets/reed.webp" alt="Festival de la culture">
+                <div class="gallery-overlay">
+                   <!--<a href="https://www.instagram.com/p/DANSE_EXAMPLE/" target="_blank" rel = "noopener" class="gallery-link">--> 
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 7 -->
+            <div class="gallery-post" data-category="events">
+                <img src="assets/HIMRA.png" alt="Festival de la culture">
+                <div class="gallery-overlay">
+                   <a href="https://www.instagram.com/reel/DEHnq2WKTmh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel = "noopener" class="gallery-link">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+  <!-- Flux d'articles -->
+<section id="insights" class="articles-flow">
+    <h2 class="section-title">Insights Culturels</h2>
+    <p class="section-subtitle">Découvrez nos analyses et réflexions sur la culture ivoirienne</p>
+    
+    <div class="articles-container">
+        <!-- Article 1 -->
+        <article class="culture-card">
+            <div class="card-header">
+                <span class="article-category">Tradition</span>
+                <time datetime="2024-06-15">15 Juin 2024</time>
+            </div>
+            <h3>Le Zaouli : Danse sacrée du Guro</h3>
+            <div class="excerpt">
+                <p>Exploration des origines et de la signification contemporaine de cette danse masquée...</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="read-more">Lire la suite →</a>
+                <div class="social-mini">
+                    <button class="icon-btn" aria-label="Partager sur Facebook">↗️</button>
+                    <button class="icon-btn" aria-label="Partager sur Twitter">↗️</button>
+                </div>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="culture-card">
+            <div class="card-header">
+                <span class="article-category">Interview</span>
+                <time datetime="2024-06-10">10 Juin 2024</time>
+            </div>
+            <h3>Rencontre avec un artisan bronzier</h3>
+            <div class="excerpt">
+                <p>Portrait d'un gardien des techniques ancestrales de travail du bronze...</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="read-more">Lire la suite →</a>
+                <div class="social-mini">
+                    <button class="icon-btn">↗️</button>
+                    <button class="icon-btn">↗️</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+ <!-- Section Communauté -->
+<section id="community" class="community" aria-label="Rejoindre la communauté Leke Culture">
+    <div class="community-content">
+        <h2>Rejoindre la Communauté Leke</h2>
+        <p class="community-subtitle">Connectez-vous avec les passionnés de culture ivoirienne</p>
+        
+        <div class="community-benefits">
+            <div class="benefit-item">
+                <span class="benefit-icon">👥</span>
+                <h3>Réseau exclusif</h3>
+                <p>Échangez avec des experts et passionnés</p>
+            </div>
+            
+            <div class="benefit-item">
+                <span class="benefit-icon">🎉</span>
+                <h3>Événements privés</h3>
+                <p>Accès à nos rencontres culturelles</p>
+            </div>
+            
+            <div class="benefit-item">
+                <span class="benefit-icon">💬</span>
+                <h3>Contenu premium</h3>
+                <p>Discussions et analyses en avant-première</p>
+            </div>
+        </div>
+
+        <div class="community-cta">
+            <h3>Recevez votre lien d'invitation</h3>
+            
+            <!-- Formulaire amélioré -->
+            <form id="whatsappForm" class="whatsapp-form" novalidate>
+                <div class="input-group">
+                    <select id="countryCode" class="country-code" aria-label="Indicatif pays" required>
+                        <option value="225">Côte d'Ivoire (+225)</option>
+                        <option value="33">France (+33)</option>
+                        <option value="1">États-Unis (+1)</option>
+                    </select>
+                    <input type="tel" id="whatsappNumber" name="phone" 
+                           placeholder="Ex: 0701234567" 
+                           pattern="[0-9]{8,15}" 
+                           aria-label="Numéro WhatsApp" required>
+                </div>
+                <button type="submit" class="btn-whatsapp" aria-label="Envoyer l'invitation WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Rejoindre via WhatsApp
+                </button>
+                <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+            </form>
+            
+            <!-- Bouton direct sécurisé -->
+            <div class="direct-cta">
+                <p>Ou rejoignez directement :</p>
+                <a href="#" id="directWhatsappLink" class="btn-whatsapp-direct"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Rejoindre le groupe WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Groupe WhatsApp
+                </a>
+                <p class="disclaimer">(Sur invitation uniquement)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; Leke Culture - Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
