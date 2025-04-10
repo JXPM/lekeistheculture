@@ -18,7 +18,7 @@ touch backend/.gitignore
 #fichier Maj et push
 git status
 git add .
-git commit -m "modification de index.html"
+git commit -m "ajout de la responsivité"
 git push origin main
 
 

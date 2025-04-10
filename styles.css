@@ -31,6 +31,25 @@ body, html {
     padding: 0;
 }
 
+.hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.nav-logo img {
+    height: 50px; /* Ajustez selon votre logo */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.05);
+}
+
 .hero-slideshow {
     position: absolute;
     width: 100%;
@@ -83,9 +102,10 @@ body, html {
 }
 
 .hero-right {
-    align-self: flex-end; /* Alignement à droite */
-    margin-bottom: auto; /* Pousse vers le haut */
-    margin-left: 2rem;
+    display: flex;
+    margin-bottom: auto;
+    margin-left: 9rem;
+    gap: 2rem;
 }
 
 /* Conservez le reste de vos styles existants pour h2, p et nav */
@@ -158,6 +178,15 @@ body, html {
         padding: 1.5rem;
     }
     
+    .hero-header {
+        padding: 1rem;
+        background: rgba(0,0,0,0.7); /* Fond semi-transparent */
+    }
+    
+    .nav-logo img {
+        height: 40px;
+    }
+    
     .hero-right {
         position: fixed;
         top: 0;
@@ -165,6 +194,7 @@ body, html {
         margin: 0;
         padding: 1rem;
         z-index: 100;
+        gap: 1rem;
     }
     
     /* Menu hamburger pour mobile */
