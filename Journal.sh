@@ -18,7 +18,7 @@ touch backend/.gitignore
 #fichier Maj et push
 git status
 git add .
-git commit -m "ajout de la responsivité"
+git commit -m "Retouche"
 git push origin main
 
 
