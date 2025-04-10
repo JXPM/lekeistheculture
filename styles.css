@@ -85,7 +85,7 @@ body, html {
 .hero-right {
     align-self: flex-end; /* Alignement à droite */
     margin-bottom: auto; /* Pousse vers le haut */
-    margin-left: 7rem;
+    margin-left: 2rem;
 }
 
 /* Conservez le reste de vos styles existants pour h2, p et nav */
@@ -108,7 +108,8 @@ body, html {
 
 .hero-nav {
     display: flex;
-    gap: 9rem;
+    gap: 5rem;
+    padding-right: 2rem;
 }
 
 .hero-nav a {
@@ -121,6 +122,7 @@ body, html {
     margin: 0 6rem 0 0;
     word-spacing: 10px;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 /* Animation de trait */
@@ -143,32 +145,108 @@ body, html {
     width: 100%;
 }
 
-/* Version mobile */
-@media (max-width: 768px) {
-    .hero-right {
-        align-self: center;
-    }
-    
+/* Version tablette */
+@media (max-width: 1024px) {
     .hero-nav {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-    }
-    
-    .hero-left {
-        margin-top: 0;
-    }
-    
-    .hero-left h2 {
-        font-size: 3rem;
+        gap: 3rem;
     }
 }
 
+/* Version mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 1.5rem;
+    }
+    
+    .hero-right {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 1rem;
+        z-index: 100;
+    }
+    
+    /* Menu hamburger pour mobile */
+    .hero-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-end;
+        padding-right: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.8);
+        width: 70%;
+        height: 100vh;
+        padding: 5rem 2rem;
+        box-sizing: border-box;
+    }
+    
+    .hero-nav.active {
+        transform: translateX(0);
+    }
+    
+    .hero-left {
+        margin-top: 6rem;
+    }
+    
+    .hero-left h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* Bouton menu mobile */
+    .menu-toggle {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        z-index: 101;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--light);
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-toggle span:nth-child(1) {
+        top: 0;
+    }
+    
+    .menu-toggle span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .menu-toggle span:nth-child(3) {
+        bottom: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.active span:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+}
 /* Phrase signature */
 .hero-bottom {
-    grid-area: bottom;
     text-align: center;
-    padding: rem 0;
+    padding: 1rem 0;
 }
 
 .hero-bottom p {

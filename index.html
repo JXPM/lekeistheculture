@@ -19,11 +19,15 @@
         <div class="hero-content">
             <div class="hero-grid">
                 <div class="hero-right">
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <nav class="hero-nav">
                         <a href="#apropos">Leke</a>
                         <a href="#galerie">Leke en Action</a>
                         <a href="#insights">Nos articles</a>
-                        <a href="#blog">Découverte</a>
                         <a href="#community">Nous rejoindre</a>
                     </nav>
                 </div>
@@ -248,6 +252,13 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.hero-nav').classList.toggle('active');
+        });
+    </script>
     <script src="script.js" defer></script>
 </body>
 </html>
